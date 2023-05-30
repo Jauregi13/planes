@@ -1,0 +1,7 @@
+{
+  "name": "planes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
