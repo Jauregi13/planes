@@ -1,0 +1,9 @@
+.home-text {
+    font-family:'Roboto';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ion-margin-top {
+    margin-top: 40px !important;
+}
