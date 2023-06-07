@@ -1,6 +1,11 @@
-import { IonCol, IonContent, IonGrid, IonPage, IonRow, IonText } from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonMenu, IonPage, IonRow, IonText } from '@ionic/react';
 import { NavLink } from 'react-router-dom';
 import './Home.css';
+import logo from '../assets/logo.png';
+import comida from '../assets/images/comida.svg';
+import ruteo from '../assets/images/ruteo.svg';
+import cine from '../assets/images/cine.svg';
+
 
 const Home: React.FC = () => {
   return (
@@ -9,7 +14,7 @@ const Home: React.FC = () => {
         <IonGrid>
           <IonRow className='ion-justify-content-center ion-align-items-center'>
             <IonCol size='auto'>
-            <img className='ion-margin-top' src='/assets/logo.png' alt='logo' width={240} height={240}></img>
+            <img className='ion-margin-top' src={logo} alt='logo' width={240} height={240}></img>
             </IonCol>
           </IonRow>
           <IonRow className='ion-justify-content-center ion-align-items-center ion-margin-top'>
@@ -19,17 +24,17 @@ const Home: React.FC = () => {
           </IonRow>
           <IonRow className='ion-justify-content-center ion-align-items-center ion-margin-top'>
             <IonCol size='auto'>
-              <img src='/assets/images/comida.svg' width={160} height={160}>
+              <img src={comida} width={160} height={160}>
                 <NavLink to='/restaurantes'></NavLink>
               </img>
             </IonCol>
             <IonCol size='auto'>
-              <img src='/assets/images/ruteo.svg' width={160} height={160}></img>
+              <img src={ruteo} width={160} height={160}></img>
             </IonCol>
           </IonRow>
           <IonRow className='ion-justify-content-center ion-align-items-center'>
             <IonCol size='auto'>
-              <img src='/assets/images/cine.svg' width={160} height={160}></img>
+              <img src={cine} width={160} height={160}></img>
             </IonCol>
           </IonRow> 
         </IonGrid>
