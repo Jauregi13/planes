@@ -1,7 +1,7 @@
 import { IonCol, IonContent, IonGrid, IonHeader, IonMenu, IonPage, IonRow, IonText, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import logo from '../../public/assets/logo.jpeg';
+import logo from '../../public/assets/logo.png';
 import comida from '../../public/assets/comida.svg';
 import ruteo from '../../public/assets/ruteo.svg';
 import cine from '../../public/assets/cine.svg';

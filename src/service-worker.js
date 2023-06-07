@@ -1,7 +1,7 @@
 self.addEventListener('install', event => {
     event.waitUntil(
       caches.open('my-cache').then(cache => {
-        return cache.addAll(['/', '/index.html', '/manifest.json','/assets']); // Agrega las rutas de los archivos estáticos que deseas almacenar en caché
+        return cache.addAll(['/', '/index.html', '/manifest.json','/assets/logo.png']); // Agrega las rutas de los archivos estáticos que deseas almacenar en caché
       })
     );
   });
