@@ -2,9 +2,9 @@ import { IonCol, IonContent, IonGrid, IonHeader, IonMenu, IonPage, IonRow, IonTe
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 import logo from '../../public/assets/logo.png';
-import comida from '../../public/assets/comida.svg';
-import ruteo from '../../public/assets/ruteo.svg';
-import cine from '../../public/assets/cine.svg';
+import comida from '../../public/assets/images/comida.svg';
+import ruteo from '../../public/assets/images/ruteo.svg';
+import cine from '../../public/assets/images/cine.svg';
 
 
 const Home: React.FC = () => {
