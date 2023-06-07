@@ -1,5 +1,5 @@
 import { IonCol, IonContent, IonGrid, IonMenu, IonPage, IonRow, IonText } from '@ionic/react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import logo from '../assets/logo.png';
 import comida from '../assets/images/comida.svg';
@@ -24,9 +24,10 @@ const Home: React.FC = () => {
           </IonRow>
           <IonRow className='ion-justify-content-center ion-align-items-center ion-margin-top'>
             <IonCol size='auto'>
-              <img src={comida} width={160} height={160}>
-                <NavLink to='/restaurantes'></NavLink>
-              </img>
+              <Link to='/menuTabs'>
+                <img src={comida} width={160} height={160}></img>
+              </Link>
+              
             </IonCol>
             <IonCol size='auto'>
               <img src={ruteo} width={160} height={160}></img>

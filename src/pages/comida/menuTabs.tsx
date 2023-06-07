@@ -2,7 +2,9 @@ import React from 'react';
 import { IonApp, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Route, Redirect } from 'react-router';
-
+import Restaurantes from './restaurantes';
+import Recetas from './recetas';
+import restFavoritos from './restFavoritos';
 import { restaurant, heart, pizza} from 'ionicons/icons';
 
 
@@ -12,15 +14,15 @@ const MenuTabs: React.FC = () => {
         <IonReactRouter>
             <IonTabs>
                 <IonRouterOutlet>
-                    <Route exact path="/restaurantes">
-                        
+                    <Route exact path="/menuTabs">
+                        <Redirect to='/restaurantes'/>
                     </Route>
-                    <Route exact path="/recetas">
+                    <Route path="/restaurantes" component={Restaurantes}/>
+                
+                    <Route path="/recetas" component={Recetas}/>
                         
-                    </Route>
-                    <Route path="/restFavoritos">
-                        
-                    </Route>
+                    <Route path="/restFavoritos" component={restFavoritos}/>
+    
                 </IonRouterOutlet>
                 <IonTabBar slot="bottom">
                     <IonTabButton tab="restaurantes" href="/restaurantes">
