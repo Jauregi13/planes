@@ -17,15 +17,6 @@
             "value": "public, max-age=31536000"
           }
         ]
-      },
-      {
-        "source": "**/*.@(js|jsx)",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
       }
     ]
   }
