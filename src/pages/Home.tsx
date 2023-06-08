@@ -1,9 +1,9 @@
 import { IonCol, IonContent, IonGrid, IonMenu, IonPage, IonRow, IonText, IonRouterLink } from '@ionic/react';
 import './Home.css';
 import logo from '../assets/logo.png';
-import comida from '../assets/images/comida.svg';
-import ruteo from '../assets/images/ruteo.svg';
-import cine from '../assets/images/cine.svg';
+import comida from '../assets/images/comida.png';
+import ruteo from '../assets/images/ruteo.png';
+import cine from '../assets/images/cine.png';
 
 
 const Home: React.FC = () => {
