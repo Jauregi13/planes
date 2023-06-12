@@ -6,6 +6,7 @@ import Restaurantes from './restaurantes';
 import Recetas from './recetas';
 import restFavoritos from './restFavoritos';
 import { restaurant, heart, pizza} from 'ionicons/icons';
+import './menuTabs.css';
 
 
 const MenuTabs: React.FC = () => {
