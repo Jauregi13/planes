@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButtons,IonMenuButton } from '@ionic/react';
 
 const Restaurantes: React.FC = () => {
   return (
@@ -6,6 +6,9 @@ const Restaurantes: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonTitle>Restaurantes Favoritos</IonTitle>
+          <IonButtons slot="start">
+            <IonMenuButton />
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

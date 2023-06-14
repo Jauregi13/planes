@@ -1,9 +1,13 @@
 ion-tab-button {
-    --background: var(--ion-color-primary) !important;
+    --background: var(--ion-color-primary);
     border: 2px solid var(--ion-color-primary);
     border-radius: 20px;
 }
+ion-tab-bar {
+    border: 0px;
+}
 
 ion-tab-button.tab-selected, ion-tab-button:hover {
-    --background: var(--ion-color-secondary) !important;
+    --background: var(--ion-color-secondary);
+    border: 2px solid var(--ion-color-secondary);
 }
