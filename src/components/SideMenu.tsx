@@ -1,5 +1,33 @@
-import { IonMenu,IonHeader,IonToolbar,IonTitle,IonContent, IonPage, IonButtons,IonMenuButton } from "@ionic/react";
-import React, {useEffect,useRef, useState} from 'react';
+import { IonMenu,IonHeader,IonToolbar,IonTitle,IonContent, IonPage, IonButtons,IonMenuButton, IonList, IonMenuToggle, IonItem, IonLabel } from "@ionic/react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPersonHiking, faFilm, faBurger } from "@fortawesome/free-solid-svg-icons";
+
+
+interface Page {
+  title: String;
+  url: String;
+  icon: any;
+
+}
+
+const menuElems: Page[] = [
+  {
+    title: 'Comida',
+    url: '/restaurantes',
+    icon: faBurger
+  },
+  {
+    title: 'Cine',
+    url: '/cine',
+    icon: faFilm
+  },
+  {
+    title: 'Ruteo',
+    url: '/ruteo',
+    icon: faPersonHiking
+  }
+]
 
 const SideMenu: React.FC = () => {
 
@@ -8,23 +36,26 @@ const SideMenu: React.FC = () => {
       <>
       <IonMenu contentId="main">
         <IonHeader>
-          <IonToolbar color="tertiary">
-            <IonTitle>Menu Content</IonTitle>
+          <IonToolbar color="secondary">
+            <IonTitle>Menu Principal</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent className="ion-padding">This is the menu content.</IonContent>
+        <IonContent className="ion-padding">
+          <IonList>
+            {menuElems.map((Page,index) => {
+              return (
+                <IonMenuToggle key={index} autoHide={false}>
+                  <IonItem lines="none">
+                    <FontAwesomeIcon icon={Page.icon}/>
+                    <IonLabel>{Page.title}</IonLabel>
+                  </IonItem>
+                </IonMenuToggle>
+              )
+              
+            })}
+          </IonList>
+        </IonContent>
       </IonMenu>
-      <IonPage id="main">
-        <IonHeader>
-          <IonToolbar>
-            <IonButtons slot="start">
-              <IonMenuButton></IonMenuButton>
-            </IonButtons>
-            <IonTitle>Menu</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonContent className="ion-padding">Tap the button in the toolbar to open the menu.</IonContent>
-      </IonPage>
     </>
       
     );

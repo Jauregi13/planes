@@ -20,9 +20,6 @@ const Restaurantes: React.FC = () => {
             <IonTitle size="large">
               Restaurante
             </IonTitle>
-            <IonMenuButton slot="start">
-                <IonIcon icon={menuOutline} />
-            </IonMenuButton>
           </IonToolbar>
         </IonHeader>
         
