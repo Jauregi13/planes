@@ -5,8 +5,8 @@ import { faPersonHiking, faFilm, faBurger } from "@fortawesome/free-solid-svg-ic
 
 
 interface Page {
-  title: String;
-  url: String;
+  title: string;
+  url: string;
   icon: any;
 
 }
