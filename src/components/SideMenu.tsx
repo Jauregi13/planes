@@ -45,9 +45,9 @@ const SideMenu: React.FC = () => {
             {menuElems.map((Page,index) => {
               return (
                 <IonMenuToggle key={index} autoHide={false}>
-                  <IonItem lines="none">
+                  <IonItem lines="none" routerLink={Page.url}>
                     <FontAwesomeIcon icon={Page.icon}/>
-                    <IonLabel>{Page.title}</IonLabel>
+                    <IonLabel className="ion-margin-start">{Page.title}</IonLabel>
                   </IonItem>
                 </IonMenuToggle>
               )
