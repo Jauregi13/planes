@@ -1,6 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons,IonIcon,useIonRouter } from '@ionic/react';
-import { menuOutline } from 'ionicons/icons';
-
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar } from '@ionic/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 const Restaurantes: React.FC = () => {
 
   return (
@@ -12,6 +12,12 @@ const Restaurantes: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
+          <IonButtons slot='end' className='ion-margin-end'>
+            <FontAwesomeIcon icon={faFilter}/>
+          </IonButtons>
+        </IonToolbar>
+        <IonToolbar>
+          <IonSearchbar placeholder='Busca un restaurante' animated={true}></IonSearchbar>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
