@@ -36,7 +36,7 @@ const SideMenu: React.FC = () => {
       <>
       <IonMenu contentId="main">
         <IonHeader>
-          <IonToolbar color="secondary">
+          <IonToolbar color="primary">
             <IonTitle>Menu Principal</IonTitle>
           </IonToolbar>
         </IonHeader>

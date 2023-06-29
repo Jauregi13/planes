@@ -48,7 +48,7 @@ const Restaurantes: React.FC = () => {
               </IonRow>
               <IonRow className='ion-justify-content-center'>
                 <IonCol><h4>Precio</h4></IonCol>
-                <IonCol className='ion-text-center'>
+                <IonCol className='ion-align-items-center'>
                   <IonSegment value='precio'>
                     <IonSegmentButton>
                       <IonLabel>10-15 €</IonLabel>
@@ -64,7 +64,7 @@ const Restaurantes: React.FC = () => {
               </IonRow>
               <IonRow className='ion-justify-content-center ion-align-items-center'>
                 <IonCol><h4>Probado</h4></IonCol>
-                <IonCol className='ion-text-center'>
+                <IonCol className='ion-align-items-center'>
                   <IonToggle></IonToggle>
                 </IonCol>
               </IonRow>
