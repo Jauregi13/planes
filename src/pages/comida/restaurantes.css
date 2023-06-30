@@ -20,7 +20,7 @@ ion-thumbnail {
 }
 
 ion-item-options {
-    height: 80%;
+    height: 85%;
     top: 2px;
 
 }
@@ -36,4 +36,25 @@ ion-item-option {
 ion-card .list-md {
     display: flex;
     flex-direction: column;
+}
+
+.restInfo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stars {
+    display: flex;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: var(--ion-color-warning);
+}
+
+.favourite {
+    display: flex;
+    margin-top: 10px;
+    font-size: 35px;
+    color: var(--ion-color-primary);
 }

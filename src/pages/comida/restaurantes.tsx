@@ -1,6 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar, IonModal, IonGrid, IonRow, IonCol, IonSelect, IonSelectOption, IonToggle, IonSegment, IonSegmentButton, IonLabel, IonCard, IonThumbnail, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonItemSliding, IonItemOptions, IonItemOption } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter } from "@fortawesome/free-solid-svg-icons";
+import { faFilter,faStar,  } from "@fortawesome/free-solid-svg-icons";
+import { faStar as farStar, faHeart as farHeart} from '@fortawesome/free-regular-svg-icons';
 import './restaurantes.css';
 const Restaurantes: React.FC = () => {
 
@@ -81,6 +82,20 @@ const Restaurantes: React.FC = () => {
                     <img src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
                   </IonThumbnail>
                   <IonLabel>Begin</IonLabel>
+                  <div className='restInfo'>
+                    <div className='stars'>
+                      <FontAwesomeIcon icon={faStar}/>
+                      <FontAwesomeIcon icon={faStar}/>
+                      <FontAwesomeIcon icon={faStar}/>
+                      <FontAwesomeIcon icon={faStar}/>
+                      <FontAwesomeIcon icon={faStar}/>
+                    </div>
+                    <div className='favourite ion-justify-content-center'>
+                      <FontAwesomeIcon icon={farHeart}/>
+                    </div>
+                  </div>
+                  
+                  
                 </IonItem>
                 <IonItemOptions>
                   <IonItemOption color={'danger'}>Delete</IonItemOption>
