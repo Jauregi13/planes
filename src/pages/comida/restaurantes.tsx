@@ -74,7 +74,7 @@ const Restaurantes: React.FC = () => {
         <IonCard>
           
           <IonCardContent>
-            <IonList>
+            <IonList className='ion-justify-content-start'>
               <IonItemSliding>
                 <IonItem>
                   <IonThumbnail slot='start'>
