@@ -1,0 +1,11 @@
+ion-card {
+    box-shadow: none;
+}
+
+ion-item {
+    --inner-border-width: 0;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: var(--ion-color-primary);
+    margin-bottom: 20px;
+}
