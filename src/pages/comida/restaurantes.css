@@ -2,7 +2,7 @@ ion-card {
     box-shadow: none;
 }
 
-ion-item {
+ion-card-content ion-item {
     --inner-border-width: 0;
     border: 2px solid;
     border-radius: 10px;
@@ -21,4 +21,9 @@ ion-thumbnail {
 ion-item-options {
     height: 80%;
     top: 2px;
+
+}
+
+ion-item-option {
+    border-radius: 10px;
 }
