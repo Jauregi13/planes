@@ -22,13 +22,7 @@ const Restaurantes: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">
-              Restaurante
-            </IonTitle>
-          </IonToolbar>
-        </IonHeader>
+        
 
         <IonModal trigger='open-modal' initialBreakpoint={0.4} breakpoints={[0,0.4]}>
           <IonContent>

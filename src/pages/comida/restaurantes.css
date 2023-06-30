@@ -9,3 +9,16 @@ ion-item {
     border-color: var(--ion-color-primary);
     margin-bottom: 20px;
 }
+
+.card-content-md {
+    padding-top: 0px;
+}
+
+ion-thumbnail {
+    --size: 85px;
+}
+
+ion-item-options {
+    height: 80%;
+    top: 2px;
+}
