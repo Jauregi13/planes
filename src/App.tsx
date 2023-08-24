@@ -25,6 +25,10 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Recetas from './pages/comida/recetas';
+import RestaurantesFavoritos from './pages/comida/restFavoritos';
+import Restaurante from './model/Restaurante';
+import Restaurantes from './pages/comida/restaurantes';
 
 setupIonicReact();
 
@@ -32,15 +36,13 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
         <IonRouterOutlet id='main-content'>
-          <Route exact path="/home">
-            <Home />
-          </Route>
+          <Route exact path="/home" component={Home}/>
+          
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
-          <Route exact path="/menuTabs">
-            <MenuTabs/>
-          </Route>
+          <Route exact path="/comida" component={MenuTabs} />
+
         </IonRouterOutlet>      
     </IonReactRouter>
   </IonApp>

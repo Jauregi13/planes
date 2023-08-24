@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButtons,IonMenuButton } from '@ionic/react';
 
-const Restaurantes: React.FC = () => {
+const Recetas: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -22,4 +22,4 @@ const Restaurantes: React.FC = () => {
   );
 };
 
-export default Restaurantes;
+export default Recetas;

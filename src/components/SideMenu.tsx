@@ -1,5 +1,4 @@
 import { IonMenu,IonHeader,IonToolbar,IonTitle,IonContent, IonPage, IonButtons,IonMenuButton, IonList, IonMenuToggle, IonItem, IonLabel } from "@ionic/react";
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPersonHiking, faFilm, faBurger } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +13,7 @@ interface Page {
 const menuElems: Page[] = [
   {
     title: 'Comida',
-    url: '/restaurantes',
+    url: '#',
     icon: faBurger
   },
   {

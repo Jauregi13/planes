@@ -4,9 +4,17 @@ import logo from '../assets/logo.png';
 import comida from '../assets/images/comida.png';
 import ruteo from '../assets/images/ruteo.png';
 import cine from '../assets/images/cine.png';
+import { useEffect } from 'react';
+
+
 
 
 const Home: React.FC = () => {
+
+  useEffect(() => {
+    console.log('Home');
+  },[]);
+
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -23,7 +31,7 @@ const Home: React.FC = () => {
           </IonRow>
           <IonRow className='ion-justify-content-center ion-align-items-center ion-margin-top'>
             <IonCol size='auto'>
-              <IonRouterLink routerLink='/menuTabs' routerDirection='none'>
+              <IonRouterLink routerLink='/comida' routerDirection='none'>
                 <img src={comida} width={160} height={160}></img>
               </IonRouterLink>
               
