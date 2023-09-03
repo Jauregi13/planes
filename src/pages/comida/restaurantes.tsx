@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar, IonModal, IonGrid, IonRow, IonCol, IonSelect, IonSelectOption, IonToggle, IonSegment, IonSegmentButton, IonLabel, IonCard, IonThumbnail, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonItemSliding, IonItemOptions, IonItemOption } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar, IonModal, IonGrid, IonRow, IonCol, IonSelect, IonSelectOption, IonToggle, IonSegment, IonSegmentButton, IonLabel, IonCard, IonThumbnail, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonItemSliding, IonItemOptions, IonItemOption, IonImg } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter,faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar, faHeart as farHeart} from '@fortawesome/free-regular-svg-icons';
@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 import './restaurantes.css';
 import RestauranteViewModel from '../../viewModel/RestauranteViewModel';
 import Restaurante from '../../model/Restaurante';
+import logoHamburger from '../../assets/images/icons/hamburger.png';
+
 
 const Restaurantes: React.FC = () => {
 
@@ -111,23 +113,32 @@ const Restaurantes: React.FC = () => {
                     <img src="https://ionicframework.com/docs/img/demos/thumbnail.svg"/>
                   </IonThumbnail>
                   <div className='restInfo'>
-                    <div className='description'>
-                      <IonLabel>{restaurante.categoria}</IonLabel>
-                      <IonLabel class='restName'>{restaurante.nombre}</IonLabel>
-                      <IonLabel>{restaurante.localidad}</IonLabel>
-                    </div>
-                    <div className='valoration'>
-                      <div className='stars'>
+                    <div className='firstRow'>
+                        <IonLabel>
+                          <img src={logoHamburger} width={25} height={25} />
+                        </IonLabel>
+                        <div className='stars'>
                         {
                           Array.from({length: restaurante.valoracion}, (_,i)=>(
                             <FontAwesomeIcon key={i} icon={faStar}/>
                           ))
                         }
+                        </div>
                       </div>
-                      <div className='favourite'>
-                        <FontAwesomeIcon icon={farHeart}/>
+                      <div className='secondRow'>
+                        <div className='description'>
+                        <IonLabel class='restName'>{restaurante.nombre}</IonLabel>
+                        <IonLabel>{restaurante.localidad}</IonLabel>
+                        </div>
+                        <div className='valoration'>
+                          <div className='favourite'>
+                            <FontAwesomeIcon icon={farHeart}/>
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                      
+                      
+                    
                   
                     
                   </div>
