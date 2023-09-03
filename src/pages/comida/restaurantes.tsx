@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar, IonModal, IonGrid, IonRow, IonCol, IonSelect, IonSelectOption, IonToggle, IonSegment, IonSegmentButton, IonLabel, IonCard, IonThumbnail, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonItemSliding, IonItemOptions, IonItemOption, IonImg } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar, IonModal, IonGrid, IonRow, IonCol, IonSelect, IonSelectOption, IonToggle, IonSegment, IonSegmentButton, IonLabel, IonCard, IonThumbnail, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonItemSliding, IonItemOptions, IonItemOption, IonImg, IonButton } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter,faStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar, faHeart as farHeart} from '@fortawesome/free-regular-svg-icons';
@@ -127,8 +127,9 @@ const Restaurantes: React.FC = () => {
                       </div>
                       <div className='secondRow'>
                         <div className='description'>
-                        <IonLabel class='restName'>{restaurante.nombre}</IonLabel>
-                        <IonLabel>{restaurante.localidad}</IonLabel>
+                          <IonLabel class='restName'>{restaurante.nombre}</IonLabel>
+                          <IonLabel>{restaurante.localidad}</IonLabel>
+                          <IonButton color={'primary'}>Web</IonButton>
                         </div>
                         <div className='valoration'>
                           <div className='favourite'>

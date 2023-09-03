@@ -8,7 +8,7 @@ ion-card-content ion-item {
     border-radius: 10px;
     border-color: var(--ion-color-primary);
     margin-bottom: 20px;
-    --min-height: 150px;
+    --min-height: 180px;
 }
 
 .card-content-md {
@@ -16,7 +16,7 @@ ion-card-content ion-item {
 }
 
 ion-thumbnail {
-    --size: 125px;
+    --size: 155px;
 }
 
 ion-item-options {
@@ -53,7 +53,7 @@ ion-card .list-md {
 }
 
 .firstRow ion-label {
-    width: 80%;
+    width: 50%;
 }
 
 .secondRow {
@@ -73,7 +73,7 @@ ion-card .list-md {
 .restName {
     margin-top: 12px;
     margin-bottom: 12px;
-    font-size: 25px;
+    font-size: 20px !important;
     font-weight: 800;
 }
 
@@ -86,7 +86,9 @@ ion-card .list-md {
 }
 
 .stars {
+    width: 50%;
     display: flex;
+    justify-content: flex-start;
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 20px;
