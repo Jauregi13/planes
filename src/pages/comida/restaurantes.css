@@ -16,11 +16,11 @@ ion-card-content ion-item {
 }
 
 ion-thumbnail {
-    --size: 155px;
+    --size: 130px;
 }
 
 ion-item-options {
-    height: 85%;
+    height: 88%;
     top: 2px;
 
 }
