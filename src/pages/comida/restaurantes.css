@@ -78,10 +78,11 @@ ion-card .list-md {
 }
 
 .valoration {
-    width: 20%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .stars {
