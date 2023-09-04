@@ -1,6 +1,6 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonMenuButton,IonButtons, IonSearchbar, IonModal, IonGrid, IonRow, IonCol, IonSelect, IonSelectOption, IonToggle, IonSegment, IonSegmentButton, IonLabel, IonCard, IonThumbnail, IonCardHeader, IonCardTitle, IonCardContent, IonList, IonItem, IonItemSliding, IonItemOptions, IonItemOption, IonImg, IonButton } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter,faStar } from "@fortawesome/free-solid-svg-icons";
+import { faFilter,faStar,faTrash, faCheck, faPen } from "@fortawesome/free-solid-svg-icons";
 import { faStar as farStar, faHeart as farHeart} from '@fortawesome/free-regular-svg-icons';
 import { useEffect, useState } from 'react';
 import './restaurantes.css';
@@ -67,7 +67,10 @@ const Restaurantes: React.FC = () => {
                     <IonSelectOption>Mexicano</IonSelectOption>
                     <IonSelectOption>Italiano</IonSelectOption>
                     <IonSelectOption>Asiático</IonSelectOption>
-                    <IonSelectOption>Mediterraneo</IonSelectOption>
+                    <IonSelectOption>Hamburguesería</IonSelectOption>
+                    <IonSelectOption>Menú</IonSelectOption>
+                    <IonSelectOption>Almuerzos y meriendas</IonSelectOption>
+                    <IonSelectOption>Pintxos</IonSelectOption>
                   </IonSelect>
                 </IonCol>
               </IonRow>
@@ -147,7 +150,15 @@ const Restaurantes: React.FC = () => {
                   
                 </IonItem>
                 <IonItemOptions>
-                  <IonItemOption color={'danger'}>Delete</IonItemOption>
+                  <IonItemOption color={'danger'}>
+                    <FontAwesomeIcon icon={faTrash}/>
+                  </IonItemOption>
+                  <IonItemOption color={'success'}>
+                    <FontAwesomeIcon icon={faCheck}/>
+                  </IonItemOption>
+                  <IonItemOption color={'warning'}>
+                    <FontAwesomeIcon icon={faPen}/>
+                  </IonItemOption>
                 </IonItemOptions>
               </IonItemSliding>
               
